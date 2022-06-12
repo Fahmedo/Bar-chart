@@ -215,7 +215,7 @@ span.last-month p{
     .content{
         margin: 20px;
         padding: 0;
-        width: 500PX;
+        width: 100%;
         height: 100%;
     }
     .balance-div{
