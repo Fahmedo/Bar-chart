@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1440px;
+    height: 100px;
+    background:hsl(33, 100%, 98%);
+}
+.container{
+    width: 100%;
+    height: max-content;
+    background:hsl(33, 100%, 98%); ;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    margin: auto;
+    margin-top: 20px;
+    width:50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.balance-div{
+    width: 500px;
+    border-radius: 20px;
+    background: hsl(10, 79%, 65%);
+    margin-bottom: 20px;
+    display: flex;
+    box-shadow:
+    0px 0px 1.2px rgba(0, 0, 0, 0.002),
+    0.1px 0.1px 2.7px rgba(0, 0, 0, 0.003),
+    0.1px 0.1px 4.6px rgba(0, 0, 0, 0.004),
+    0.2px 0.2px 6.9px rgba(0, 0, 0, 0.004),
+    0.3px 0.3px 10px rgba(0, 0, 0, 0.005),
+    0.4px 0.4px 14.2px rgba(0, 0, 0, 0.006),
+    0.5px 0.5px 20.1px rgba(0, 0, 0, 0.006),
+    0.7px 0.7px 29.2px rgba(0, 0, 0, 0.007),
+    1.1px 1.1px 45px rgba(0, 0, 0, 0.008),
+    2px 2px 80px rgba(0, 0, 0, 0.01)
+  ;
+  
+}
+.balance-div #bal{
+    margin: 20px;
+    color: #fff;
+}
+.balance-div #bal p{
+    margin-bottom: 10px;
+    font-weight: 0;
+}
+ 
+h1 h3{
+    font-weight: 700;
+}
+.balance-div svg{
+    margin: 30px;
+    margin-left: auto;
+}
+section{
+    width: 500px;
+    padding-bottom: 20px;
+    height:auto;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow:
+    0px 0px 1.2px rgba(0, 0, 0, 0.002),
+    0.1px 0.1px 2.7px rgba(0, 0, 0, 0.003),
+    0.1px 0.1px 4.6px rgba(0, 0, 0, 0.004),
+    0.2px 0.2px 6.9px rgba(0, 0, 0, 0.004),
+    0.3px 0.3px 10px rgba(0, 0, 0, 0.005),
+    0.4px 0.4px 14.2px rgba(0, 0, 0, 0.006),
+    0.5px 0.5px 20.1px rgba(0, 0, 0, 0.006),
+    0.7px 0.7px 29.2px rgba(0, 0, 0, 0.007),
+    1.1px 1.1px 45px rgba(0, 0, 0, 0.008),
+    2px 2px 80px rgba(0, 0, 0, 0.01)
+  ;
+    
+}
+.spending-text{
+    margin: 20px;
+    padding: 10px;
+}
+
+.spending-div{
+    display: flex;
+    width: 80vh;
+    margin: 0px;
+    display: flex;
+    align-items: flex-end;
+}
+.spending-div .chart{
+    margin: 10px;
+    
+    
+}
+.chart span{
+    margin-left: 10px;
+    
+   
+}
+section h1{
+    margin-top: 40px;
+    
+}
+hr{
+    width: 30vw;
+    margin-left: 50px;
+    
+}
+.total{
+    display: flex;
+    margin: 20px;
+}
+span.last-month{
+    margin-left: auto;
+    display: inline;
+}
+span.last-month h4{
+    margin-left: 40px;
+}
+span.this-month h1{
+    margin: 0;
+    font-weight: 900;
+    font-stretch: wider;
+}
+span.this-month p{
+    font-size: 15px;
+}
+span.last-month p{
+    font-size: 15px;
+}
+.days{ 
+    border-radius: 10px;
+    margin-left:0 ;
+    width: 50px;
+    background:hsl(10, 79%, 65%) ;
+}
+.days::before,
+.days::after {
+    --scale:0;
+    position: absolute;
+    margin-top: -10px;
+    transform: translateX(0%) translateY(-100%)scale(var(--scale)) ;
+    transition: 150ms transform;
+    transform-origin: bottom center;
+}
+.days::before{
+    padding: .5rem;
+    border-radius: .3rem;
+    text-align: centers;
+    width: max-content;
+    background: #333;
+    color: #fff;
+    font-size: 10px;
+    content: attr(data-tooltip);
+}
+.days:hover::before,
+.days:hover::after{
+    --scale:1;
+}
+.daysr::after{
+    content: '';
+    border: 10px solid transparent;
+    border-top-color: #000;
+}
+.day1{
+    height: 10vh;
+  
+}
+.day2{
+    height: 20vh;
+}
+.day3{
+    height: 30vh;
+    background: skyblue;
+}
+.day4{
+    height: 18vh;
+}
+.day5{
+    height: 15vh;
+}
+.day6{
+    height: 25vh;
+}
+.day7{
+    height: 17vh;
+}
+
+
+@media screen and(max-width: 375px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+}
